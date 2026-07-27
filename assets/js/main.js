@@ -198,8 +198,12 @@
       sendBtn.addEventListener("click", function () {
         if (!validateStep4()) return;
 
+        var cfg = window.SITE_CONFIG || {};
+        var businessName = cfg.businessName || "the business";
+        var number = cfg.phoneDigits || "";
+
         var body = [
-          "New quote request — 2 Brothers Detailing website",
+          "New quote request — " + businessName + " website",
           "Name: " + answers.name,
           "Phone: " + answers.phone,
           "Service: " + answers.service,
@@ -207,7 +211,6 @@
           "Preferred time: " + answers.timing,
         ].join("\n");
 
-        var number = "4693388237";
         var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
         var smsUrl = (isIOS ? "sms:" + number + "&body=" : "sms:" + number + "?body=") + encodeURIComponent(body);
 

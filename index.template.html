@@ -1,16 +1,10 @@
-<!--
-  AUTO-GENERATED from index.template.html + site.config.json.
-  Do not hand-edit this file directly — edit index.template.html for
-  structure/copy, edit site.config.json for business details, then run
-  `python3 build.py` to regenerate this file.
--->
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>2 Brothers Detailing — Mobile Auto Detailing | Balch Springs, TX</title>
-<meta name="description" content="Premium mobile auto detailing that comes to you. Full exterior wash, interior deep cleaning, and showroom shine — serving Balch Springs & surrounding areas. Starting at $50.">
+<title>{{PAGE_TITLE}}</title>
+<meta name="description" content="{{META_DESCRIPTION}}">
 <link rel="icon" type="image/png" href="assets/img/favicon-512.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -53,8 +47,8 @@
 
 <header class="site-header" id="site-header">
   <div class="nav-inner">
-    <a href="#top" class="brand" aria-label="2 Brothers Detailing — home">
-      <img src="assets/img/logo-full.png" alt="2 Brothers Detailing logo" class="brand-logo">
+    <a href="#top" class="brand" aria-label="{{BUSINESS_NAME}} — home">
+      <img src="assets/img/logo-full.png" alt="{{BUSINESS_NAME}} logo" class="brand-logo">
     </a>
     <nav class="main-nav" aria-label="Primary">
       <a href="#services">Services</a>
@@ -63,11 +57,11 @@
       <a href="#contact">Get A Quote</a>
     </nav>
     <div class="nav-cta">
-      <a href="tel:+14693388237" class="nav-phone">
+      <a href="tel:{{PHONE_E164}}" class="nav-phone">
         <svg class="icon" aria-hidden="true"><use href="#icon-phone"/></svg>
-        <span>469-338-8237</span>
+        <span>{{PHONE_DISPLAY}}</span>
       </a>
-      <a href="sms:+14693388237" class="btn btn-primary btn-sm">Book Now</a>
+      <a href="sms:{{PHONE_E164}}" class="btn btn-primary btn-sm">Book Now</a>
     </div>
     <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
       <span></span><span></span><span></span>
@@ -78,10 +72,10 @@
     <a href="#process">Process</a>
     <a href="#pricing">Pricing</a>
     <a href="#contact">Get A Quote</a>
-    <a href="tel:+14693388237" class="mobile-phone">
-      <svg class="icon" aria-hidden="true"><use href="#icon-phone"/></svg> 469-338-8237
+    <a href="tel:{{PHONE_E164}}" class="mobile-phone">
+      <svg class="icon" aria-hidden="true"><use href="#icon-phone"/></svg> {{PHONE_DISPLAY}}
     </a>
-    <a href="sms:+14693388237" class="btn btn-primary btn-block">Book Now</a>
+    <a href="sms:{{PHONE_E164}}" class="btn btn-primary btn-block">Book Now</a>
   </div>
 </header>
 
@@ -103,13 +97,13 @@
           <span class="line"><span class="split">Mobile Detailing</span></span>
           <span class="line"><span class="split text-accent">That Brings The Shine Back.</span></span>
         </h1>
-        <p class="hero-sub reveal-up">Bring your car back to life — clean, fresh, and shining like new. Full-service mobile detailing at your driveway, wherever you are in Balch Springs &amp; Surrounding Areas.</p>
+        <p class="hero-sub reveal-up">Bring your car back to life — clean, fresh, and shining like new. Full-service mobile detailing at your driveway, wherever you are in {{SERVICE_AREA_CITY}} &amp; Surrounding Areas.</p>
         <div class="hero-actions reveal-up">
-          <a href="sms:+14693388237" class="btn btn-primary btn-lg">
+          <a href="sms:{{PHONE_E164}}" class="btn btn-primary btn-lg">
             Book Your Appointment
             <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg>
           </a>
-          <a href="tel:+14693388237" class="btn btn-ghost btn-lg">
+          <a href="tel:{{PHONE_E164}}" class="btn btn-ghost btn-lg">
             <svg class="icon" aria-hidden="true"><use href="#icon-phone"/></svg>
             Call / Text Now
           </a>
@@ -121,8 +115,8 @@
           <li><svg class="icon" aria-hidden="true"><use href="#icon-tool"/></svg>Professional Equipment</li>
           <li><svg class="icon" aria-hidden="true"><use href="#icon-tag"/></svg>Affordable Pricing</li>
         </ul>
-        <p class="hero-bottom-phone"><svg class="icon" aria-hidden="true"><use href="#icon-phone"/></svg>469-338-8237</p>
-        <p class="hero-bottom-area">Balch Springs &amp; Surrounding Areas</p>
+        <p class="hero-bottom-phone"><svg class="icon" aria-hidden="true"><use href="#icon-phone"/></svg>{{PHONE_DISPLAY}}</p>
+        <p class="hero-bottom-area">{{SERVICE_AREA_CITY}} &amp; Surrounding Areas</p>
       </div>
     </div>
     <div class="scroll-cue" aria-hidden="true"><span></span>Scroll</div>
@@ -132,9 +126,9 @@
   <div class="marquee" aria-hidden="true">
     <div class="marquee-track">
       <span>Mobile Auto Detailing</span><span>•</span><span>We Come To You</span><span>•</span>
-      <span>Same-Day Appointments Available</span><span>•</span><span>Serving Balch Springs &amp; Surrounding Areas</span><span>•</span>
+      <span>Same-Day Appointments Available</span><span>•</span><span>Serving {{SERVICE_AREA_CITY}} &amp; Surrounding Areas</span><span>•</span>
       <span>Mobile Auto Detailing</span><span>•</span><span>We Come To You</span><span>•</span>
-      <span>Same-Day Appointments Available</span><span>•</span><span>Serving Balch Springs &amp; Surrounding Areas</span><span>•</span>
+      <span>Same-Day Appointments Available</span><span>•</span><span>Serving {{SERVICE_AREA_CITY}} &amp; Surrounding Areas</span><span>•</span>
     </div>
   </div>
 
@@ -272,7 +266,7 @@
       <div class="pricing-card reveal-card">
         <div class="pricing-copy">
           <p class="eyebrow">Pricing</p>
-          <h2 class="section-title">Starts At <span class="price">$50</span></h2>
+          <h2 class="section-title">Starts At <span class="price">{{STARTING_PRICE}}</span></h2>
           <p class="pricing-note">Price varies by vehicle size &amp; condition.</p>
           <ul class="pricing-checklist">
             <li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg>Full Exterior Wash</li>
@@ -283,8 +277,8 @@
             <li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg>Odor Removal</li>
           </ul>
           <div class="pricing-actions">
-            <a href="sms:+14693388237" class="btn btn-primary btn-lg">Book Today</a>
-            <a href="tel:+14693388237" class="btn btn-ghost btn-lg">
+            <a href="sms:{{PHONE_E164}}" class="btn btn-primary btn-lg">Book Today</a>
+            <a href="tel:{{PHONE_E164}}" class="btn btn-ghost btn-lg">
               <svg class="icon" aria-hidden="true"><use href="#icon-phone"/></svg>Call / Text
             </a>
           </div>
@@ -302,9 +296,9 @@
     <div class="container area-inner">
       <div class="area-copy">
         <p class="eyebrow reveal-up">Service Area</p>
-        <h2 class="section-title reveal-up">Serving Balch Springs <span class="text-accent">&amp; Surrounding Areas.</span></h2>
+        <h2 class="section-title reveal-up">Serving {{SERVICE_AREA_CITY}} <span class="text-accent">&amp; Surrounding Areas.</span></h2>
         <p class="reveal-up">We come to your driveway, office, or curb — anywhere in the service area. Same-day appointments are often available, so don't wait to get your car back to life.</p>
-        <a href="sms:+14693388237" class="btn btn-primary btn-lg reveal-up">Check Availability</a>
+        <a href="sms:{{PHONE_E164}}" class="btn btn-primary btn-lg reveal-up">Check Availability</a>
       </div>
       <div class="area-visual reveal-card" aria-hidden="true">
         <div class="pin-rings">
@@ -406,7 +400,7 @@
           <div class="quiz-step quiz-done" data-step="done">
             <svg class="icon quiz-done-icon" aria-hidden="true"><use href="#icon-check"/></svg>
             <h3>Your text is ready to send.</h3>
-            <p>We opened a text message to <strong>469-338-8237</strong> with your details pre-filled — just hit send in your messaging app and we'll text you back to confirm.</p>
+            <p>We opened a text message to <strong>{{PHONE_DISPLAY}}</strong> with your details pre-filled — just hit send in your messaging app and we'll text you back to confirm.</p>
             <button type="button" class="btn btn-ghost quiz-restart">Start Over</button>
           </div>
 
@@ -423,8 +417,8 @@
       <h2 class="reveal-up">Book Today — <span class="text-accent">Your Car Deserves It.</span></h2>
       <p class="reveal-up">Call or text now to lock in your same-day appointment.</p>
       <div class="hero-actions reveal-up">
-        <a href="sms:+14693388237" class="btn btn-primary btn-lg">Text 469-338-8237</a>
-        <a href="tel:+14693388237" class="btn btn-ghost btn-lg">
+        <a href="sms:{{PHONE_E164}}" class="btn btn-primary btn-lg">Text {{PHONE_DISPLAY}}</a>
+        <a href="tel:{{PHONE_E164}}" class="btn btn-ghost btn-lg">
           <svg class="icon" aria-hidden="true"><use href="#icon-phone"/></svg>Call Now
         </a>
       </div>
@@ -435,7 +429,7 @@
 
 <footer class="site-footer">
   <div class="container footer-inner">
-    <img src="assets/img/logo-full.png" alt="2 Brothers Detailing logo" class="footer-logo">
+    <img src="assets/img/logo-full.png" alt="{{BUSINESS_NAME}} logo" class="footer-logo">
     <div class="footer-links">
       <a href="#services">Services</a>
       <a href="#process">Process</a>
@@ -444,12 +438,12 @@
       <a href="#contact">Get A Quote</a>
     </div>
     <div class="footer-contact">
-      <a href="tel:+14693388237"><svg class="icon" aria-hidden="true"><use href="#icon-phone"/></svg>469-338-8237</a>
-      <span><svg class="icon" aria-hidden="true"><use href="#icon-pin"/></svg>Balch Springs &amp; Surrounding Areas, TX</span>
+      <a href="tel:{{PHONE_E164}}"><svg class="icon" aria-hidden="true"><use href="#icon-phone"/></svg>{{PHONE_DISPLAY}}</a>
+      <span><svg class="icon" aria-hidden="true"><use href="#icon-pin"/></svg>{{SERVICE_AREA_CITY}} &amp; Surrounding Areas, {{SERVICE_AREA_STATE}}</span>
     </div>
   </div>
   <div class="container footer-bottom">
-    <span>&copy; 2026 2 Brothers Detailing. Mobile auto detailing done right.</span>
+    <span>&copy; {{COPYRIGHT_YEAR}} {{BUSINESS_NAME}}. Mobile auto detailing done right.</span>
     <a href="https://emannadigital.com" target="_blank" rel="noopener" class="footer-credit-bubble">
       <img src="assets/img/emanna-icon.png" alt="Emanna Digital">
       <span>Designed by <strong>Emanna Digital</strong></span>
