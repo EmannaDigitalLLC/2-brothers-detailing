@@ -238,6 +238,9 @@ button{ font-family:inherit; }
   gap:var(--space-4); flex-wrap:wrap;
   padding:var(--space-4) max(var(--space-3), calc((100vw - var(--container)) / 2 + var(--space-3))) var(--space-6);
 }
+@media (min-width: 761px){
+  .hero-bottom{ padding-inline:clamp(2rem, 3vw, 3.5rem); }
+}
 
 .hero-bottom-left{ max-width:640px; }
 
