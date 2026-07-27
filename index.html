@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2 Brothers Detailing — Mobile Auto Detailing | Balch Springs, TX</title>
+<meta name="description" content="Premium mobile auto detailing that comes to you. Full exterior wash, interior deep cleaning, and showroom shine — serving Balch Springs & surrounding areas. Starting at $50.">
+<link rel="icon" type="image/png" href="assets/img/favicon-512.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- decorative SVG sprite (hidden, referenced via <use>) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<symbol id="icon-droplet" viewBox="0 0 24 24"><path d="M12 2.5s6.5 7.2 6.5 12A6.5 6.5 0 1 1 5.5 14.5C5.5 9.7 12 2.5 12 2.5Z"/></symbol>
+<symbol id="icon-seat" viewBox="0 0 24 24"><path d="M6 3h7a2 2 0 0 1 2 2v6l3 2v6a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-4"/><path d="M6 13V5a2 2 0 0 1 2-2"/><path d="M6 13h9"/></symbol>
+<symbol id="icon-spray" viewBox="0 0 24 24"><path d="M13 3 8 10h3l-2 11 8-12h-3l2-6Z"/></symbol>
+<symbol id="icon-panel" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18"/><circle cx="8" cy="14.5" r="1.4"/><circle cx="13" cy="14.5" r="1.4"/></symbol>
+<symbol id="icon-tire" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.2"/><path d="M12 3v3.2M12 17.8V21M3 12h3.2M17.8 12H21M5.6 5.6l2.3 2.3M16.1 16.1l2.3 2.3M5.6 18.4l2.3-2.3M16.1 7.9l2.3-2.3"/></symbol>
+<symbol id="icon-window" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 4 15 20"/></symbol>
+<symbol id="icon-wind" viewBox="0 0 24 24"><path d="M3 8h11.5a2.5 2.5 0 1 0-2.4-3.2"/><path d="M3 16h14.5a2.5 2.5 0 1 1-2.4 3.2"/><path d="M3 12h8.5a2.5 2.5 0 1 1-2.4 3.2"/></symbol>
+<symbol id="icon-engine" viewBox="0 0 24 24"><rect x="3" y="9" width="12" height="7" rx="1"/><path d="M15 11h3v3h-3"/><path d="M6 9V6h4v3M9 16v2M12 16v2M8 3v2M11 3v2"/></symbol>
+<symbol id="icon-paw" viewBox="0 0 24 24"><circle cx="7" cy="9" r="1.6"/><circle cx="12" cy="6.5" r="1.6"/><circle cx="17" cy="9" r="1.6"/><path d="M12 12.5c-3 0-5.2 2-5.2 4.3 0 1.6 1.3 2.5 2.8 2 .8-.3 1.6-.5 2.4-.5s1.6.2 2.4.5c1.5.5 2.8-.4 2.8-2 0-2.3-2.2-4.3-5.2-4.3Z"/></symbol>
+<symbol id="icon-stain" viewBox="0 0 24 24"><path d="M12 3c2.5 3 6 6.8 6 10.5A6 6 0 0 1 6 13.5C6 9.8 9.5 6 12 3Z"/><path d="M10.5 14.5a2 2 0 0 0 3.6 1.2"/></symbol>
+<symbol id="icon-shield" viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/><path d="M9 12l2 2 4-4.5"/></symbol>
+<symbol id="icon-tool" viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.6 2.6-2-2 2.6-2.6Z"/></symbol>
+<symbol id="icon-tag" viewBox="0 0 24 24"><path d="M12.5 3H5a2 2 0 0 0-2 2v7.5a2 2 0 0 0 .6 1.4l8.5 8.5a2 2 0 0 0 2.8 0l6.6-6.6a2 2 0 0 0 0-2.8l-8.5-8.5a2 2 0 0 0-1.5-.5Z"/><circle cx="8" cy="8" r="1.5"/></symbol>
+<symbol id="icon-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/><path d="M12 14v2.5l1.8 1"/></symbol>
+<symbol id="icon-phone" viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.3 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.9 21 3 13.1 3 3.6c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.3 1L6.6 10.8Z"/></symbol>
+<symbol id="icon-message" viewBox="0 0 24 24"><path d="M4 5h16v10.5a1.5 1.5 0 0 1-1.5 1.5H9l-5 4V5Z"/></symbol>
+<symbol id="icon-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.6 7-11.5A7 7 0 0 0 5 9.5C5 14.4 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+<symbol id="icon-check" viewBox="0 0 24 24"><path d="M4 12.5 9.5 18 20 6"/></symbol>
+<symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+<symbol id="icon-play" viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5-11-6.5Z"/></symbol>
+<symbol id="icon-pause" viewBox="0 0 24 24"><path d="M7 5h3v14H7zM14 5h3v14h-3z"/></symbol>
+</defs>
+</svg>
+
+<div id="smooth-wrapper">
+<div id="smooth-content">
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header" id="site-header">
+  <div class="nav-inner">
+    <a href="#top" class="brand" aria-label="2 Brothers Detailing — home">
+      <img src="assets/img/logo-full.png" alt="2 Brothers Detailing logo" class="brand-logo">
+    </a>
+    <nav class="main-nav" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Get A Quote</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="tel:+14693388237" class="nav-phone">
+        <svg class="icon" aria-hidden="true"><use href="#icon-phone"/></svg>
+        <span>469-338-8237</span>
+      </a>
+      <a href="sms:+14693388237" class="btn btn-primary btn-sm">Book Now</a>
+    </div>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#services">Services</a>
+    <a href="#process">Process</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#contact">Get A Quote</a>
+    <a href="tel:+14693388237" class="mobile-phone">
+      <svg class="icon" aria-hidden="true"><use href="#icon-phone"/></svg> 469-338-8237
+    </a>
+    <a href="sms:+14693388237" class="btn btn-primary btn-block">Book Now</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero-bg" data-parallax>
+      <video autoplay muted loop playsinline preload="auto" poster="Media/Unknown-5.jpg" aria-hidden="true">
+        <source src="Media/AdobeStock_309826195.mp4" type="video/mp4">
+      </video>
+      <div class="hero-scrim"></div>
+    </div>
+    <div class="hero-diagonal" aria-hidden="true"></div>
+    <div class="container hero-inner">
+      <p class="eyebrow reveal-up">We Come To You</p>
+      <h1 class="hero-title">
+        <span class="line"><span class="split">Mobile Detailing</span></span>
+        <span class="line"><span class="split text-accent">That Brings The Shine Back.</span></span>
+      </h1>
+      <p class="hero-sub reveal-up">Bring your car back to life — clean, fresh, and shining like new. Full-service mobile detailing at your driveway, wherever you are in Balch Springs &amp; surrounding areas.</p>
+      <div class="hero-actions reveal-up">
+        <a href="sms:+14693388237" class="btn btn-primary btn-lg">
+          Book Your Appointment
+          <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg>
+        </a>
+        <a href="tel:+14693388237" class="btn btn-ghost btn-lg">
+          <svg class="icon" aria-hidden="true"><use href="#icon-phone"/></svg>
+          Call / Text Now
+        </a>
+      </div>
+      <ul class="hero-trust reveal-up">
+        <li><svg class="icon" aria-hidden="true"><use href="#icon-shield"/></svg>Reliable &amp; Trusted</li>
+        <li><svg class="icon" aria-hidden="true"><use href="#icon-tool"/></svg>Professional Equipment</li>
+        <li><svg class="icon" aria-hidden="true"><use href="#icon-tag"/></svg>Affordable Pricing</li>
+      </ul>
+    </div>
+    <div class="scroll-cue" aria-hidden="true"><span></span>Scroll</div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Mobile Auto Detailing</span><span>•</span><span>We Come To You</span><span>•</span>
+      <span>Same-Day Appointments Available</span><span>•</span><span>Serving Balch Springs &amp; Surrounding Areas</span><span>•</span>
+      <span>Mobile Auto Detailing</span><span>•</span><span>We Come To You</span><span>•</span>
+      <span>Same-Day Appointments Available</span><span>•</span><span>Serving Balch Springs &amp; Surrounding Areas</span><span>•</span>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow reveal-up">Services Include</p>
+        <h2 class="section-title reveal-up">Everything Your Car Needs, <span class="text-accent">In One Visit</span></h2>
+      </div>
+      <div class="services-grid">
+        <article class="service-card reveal-card">
+          <svg class="icon icon-lg" aria-hidden="true"><use href="#icon-droplet"/></svg>
+          <h3>Full Exterior Wash</h3>
+          <p>Hand wash and rinse that lifts dirt and grime without damaging your paint.</p>
+        </article>
+        <article class="service-card reveal-card">
+          <svg class="icon icon-lg" aria-hidden="true"><use href="#icon-seat"/></svg>
+          <h3>Interior Deep Cleaning</h3>
+          <p>Every surface wiped, conditioned, and refreshed from floor mats to headliner.</p>
+        </article>
+        <article class="service-card reveal-card">
+          <svg class="icon icon-lg" aria-hidden="true"><use href="#icon-spray"/></svg>
+          <h3>Vacuum + Shampoo Extraction</h3>
+          <p>Deep extraction on carpets and seats to pull out embedded dirt and stains.</p>
+        </article>
+        <article class="service-card reveal-card">
+          <svg class="icon icon-lg" aria-hidden="true"><use href="#icon-panel"/></svg>
+          <h3>Dashboard &amp; Door Panel Detail</h3>
+          <p>Streak-free wipe down and UV-safe conditioning on every panel and vent.</p>
+        </article>
+        <article class="service-card reveal-card">
+          <svg class="icon icon-lg" aria-hidden="true"><use href="#icon-tire"/></svg>
+          <h3>Tire Shine</h3>
+          <p>A rich, long-lasting shine that finishes off the look on every wheel.</p>
+        </article>
+        <article class="service-card reveal-card">
+          <svg class="icon icon-lg" aria-hidden="true"><use href="#icon-window"/></svg>
+          <h3>Streak-Free Windows</h3>
+          <p>Crystal clear glass, inside and out, with zero streaks or residue.</p>
+        </article>
+        <article class="service-card reveal-card">
+          <svg class="icon icon-lg" aria-hidden="true"><use href="#icon-wind"/></svg>
+          <h3>Odor Removal</h3>
+          <p>Neutralize odors at the source so your car feels as fresh as it looks.</p>
+        </article>
+      </div>
+
+      <div class="addons">
+        <p class="addons-label">Add-Ons Available</p>
+        <div class="addons-list">
+          <span class="addon-chip"><svg class="icon" aria-hidden="true"><use href="#icon-engine"/></svg>Engine Bay Cleaning</span>
+          <span class="addon-chip"><svg class="icon" aria-hidden="true"><use href="#icon-paw"/></svg>Pet Hair Removal</span>
+          <span class="addon-chip"><svg class="icon" aria-hidden="true"><use href="#icon-stain"/></svg>Stain Treatment</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS (horizontal pinned scroll) -->
+  <section class="process" id="process">
+    <div class="process-head container">
+      <p class="eyebrow reveal-up">The Process</p>
+      <h2 class="section-title reveal-up">From Foam To <span class="text-accent">Showroom.</span></h2>
+    </div>
+    <div class="process-pin">
+      <div class="process-track">
+        <article class="process-panel">
+          <div class="process-media"><img src="Media/Unknown-2.jpg" alt="Foam pre-soak covering the front of an SUV before hand washing" loading="lazy"></div>
+          <div class="process-copy">
+            <span class="process-index">01</span>
+            <h3>Foam Pre-Soak</h3>
+            <p>A thick foam bath loosens dirt and road grime before a single towel touches the paint.</p>
+          </div>
+        </article>
+        <article class="process-panel">
+          <div class="process-media"><img src="Media/Unknown.jpg" alt="Foam-covered SUV rear during the hand wash and rinse stage" loading="lazy"></div>
+          <div class="process-copy">
+            <span class="process-index">02</span>
+            <h3>Hand Wash &amp; Rinse</h3>
+            <p>A careful, hand-washed rinse safely lifts what the foam loosened — no scratches, no shortcuts.</p>
+          </div>
+        </article>
+        <article class="process-panel">
+          <div class="process-media"><img src="Media/Unknown-3.jpg" alt="Detailed leather interior and center console of a vehicle" loading="lazy"></div>
+          <div class="process-copy">
+            <span class="process-index">03</span>
+            <h3>Interior Detail</h3>
+            <p>Vacuum, shampoo extraction, and panel conditioning bring the cabin back to life.</p>
+          </div>
+        </article>
+        <article class="process-panel">
+          <div class="process-media"><img src="Media/Unknown-4.jpg" alt="Finished glossy black detailed car parked in a carport" loading="lazy"></div>
+          <div class="process-copy">
+            <span class="process-index">04</span>
+            <h3>Showroom Finish</h3>
+            <p>Streak-free glass, tire shine, and a deep gloss finish your car deserves.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO SHOWCASE -->
+  <section class="section video-section">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow reveal-up">See It In Action</p>
+        <h2 class="section-title reveal-up">The Wash, <span class="text-accent">Up Close.</span></h2>
+      </div>
+      <div class="video-grid">
+        <div class="video-card reveal-card video-card--wide">
+          <video playsinline muted loop preload="metadata" poster="Media/Unknown-2.jpg">
+            <source src="Media/Unknown-2.mp4" type="video/mp4">
+          </video>
+          <button class="video-toggle" type="button" aria-label="Play or pause video">
+            <svg class="icon" aria-hidden="true"><use href="#icon-play"/></svg>
+          </button>
+        </div>
+        <div class="video-card reveal-card">
+          <video playsinline muted loop preload="metadata" poster="Media/Unknown.jpg">
+            <source src="Media/Unknown.mp4" type="video/mp4">
+          </video>
+          <button class="video-toggle" type="button" aria-label="Play or pause video">
+            <svg class="icon" aria-hidden="true"><use href="#icon-play"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="section pricing" id="pricing">
+    <div class="container">
+      <div class="pricing-card reveal-card">
+        <div class="pricing-copy">
+          <p class="eyebrow">Pricing</p>
+          <h2 class="section-title">Starts At <span class="price">$50</span></h2>
+          <p class="pricing-note">Price varies by vehicle size &amp; condition.</p>
+          <ul class="pricing-checklist">
+            <li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg>Full Exterior Wash</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg>Interior Deep Cleaning</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg>Vacuum + Shampoo Extraction</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg>Dashboard &amp; Door Panel Detail</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg>Tire Shine &amp; Streak-Free Windows</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg>Odor Removal</li>
+          </ul>
+          <div class="pricing-actions">
+            <a href="sms:+14693388237" class="btn btn-primary btn-lg">Book Today</a>
+            <a href="tel:+14693388237" class="btn btn-ghost btn-lg">
+              <svg class="icon" aria-hidden="true"><use href="#icon-phone"/></svg>Call / Text
+            </a>
+          </div>
+        </div>
+        <div class="pricing-badge">
+          <svg class="icon" aria-hidden="true"><use href="#icon-calendar"/></svg>
+          <p>Same-Day<br>Appointments<br>Available</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE AREA -->
+  <section class="section area" id="area">
+    <div class="container area-inner">
+      <div class="area-copy">
+        <p class="eyebrow reveal-up">Service Area</p>
+        <h2 class="section-title reveal-up">Serving Balch Springs <span class="text-accent">&amp; Surrounding Areas.</span></h2>
+        <p class="reveal-up">We come to your driveway, office, or curb — anywhere in the service area. Same-day appointments are often available, so don't wait to get your car back to life.</p>
+        <a href="sms:+14693388237" class="btn btn-primary btn-lg reveal-up">Check Availability</a>
+      </div>
+      <div class="area-visual reveal-card" aria-hidden="true">
+        <div class="pin-rings">
+          <span class="ring ring-1"></span>
+          <span class="ring ring-2"></span>
+          <span class="ring ring-3"></span>
+          <svg class="icon pin-icon"><use href="#icon-pin"/></svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / QUOTE QUIZ -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-head section-head--center">
+        <p class="eyebrow reveal-up">Get A Quote</p>
+        <h2 class="section-title reveal-up">Tell Us About <span class="text-accent">Your Car.</span></h2>
+        <p class="reveal-up">Answer four quick questions and we'll text you back to lock in your appointment.</p>
+      </div>
+
+      <form class="quiz-card reveal-card" id="quiz-form" novalidate>
+        <div class="quiz-progress" aria-hidden="true">
+          <span class="quiz-progress-bar" id="quiz-progress-bar"></span>
+        </div>
+
+        <div class="quiz-steps" id="quiz-steps">
+
+          <div class="quiz-step is-active" data-step="1">
+            <p class="quiz-step-label">Step 1 of 4</p>
+            <h3>What's your name &amp; best number?</h3>
+            <div class="quiz-fields">
+              <label class="sr-only" for="q-name">Full name</label>
+              <input class="quiz-input" type="text" id="q-name" name="name" placeholder="Full name" autocomplete="name" required>
+              <label class="sr-only" for="q-phone">Phone number</label>
+              <input class="quiz-input" type="tel" id="q-phone" name="phone" placeholder="Phone number" autocomplete="tel" inputmode="tel" required>
+            </div>
+            <p class="quiz-error" data-error-for="1" hidden>Please enter your name and a valid phone number.</p>
+            <div class="quiz-actions">
+              <span></span>
+              <button type="button" class="btn btn-primary quiz-next">
+                Next <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="quiz-step" data-step="2">
+            <p class="quiz-step-label">Step 2 of 4</p>
+            <h3>What service are you looking for?</h3>
+            <div class="quiz-options" data-field="service" role="radiogroup">
+              <button type="button" class="quiz-option">Full Exterior Wash</button>
+              <button type="button" class="quiz-option">Interior Deep Cleaning</button>
+              <button type="button" class="quiz-option">Full Interior + Exterior</button>
+              <button type="button" class="quiz-option">Not Sure Yet</button>
+            </div>
+            <p class="quiz-error" data-error-for="2" hidden>Please choose one option.</p>
+            <div class="quiz-actions">
+              <button type="button" class="btn btn-ghost quiz-back">Back</button>
+              <button type="button" class="btn btn-primary quiz-next">
+                Next <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="quiz-step" data-step="3">
+            <p class="quiz-step-label">Step 3 of 4</p>
+            <h3>What type of vehicle is it?</h3>
+            <div class="quiz-options" data-field="vehicle" role="radiogroup">
+              <button type="button" class="quiz-option">Sedan / Coupe</button>
+              <button type="button" class="quiz-option">SUV / Crossover</button>
+              <button type="button" class="quiz-option">Truck</button>
+              <button type="button" class="quiz-option">Van / Minivan</button>
+            </div>
+            <p class="quiz-error" data-error-for="3" hidden>Please choose one option.</p>
+            <div class="quiz-actions">
+              <button type="button" class="btn btn-ghost quiz-back">Back</button>
+              <button type="button" class="btn btn-primary quiz-next">
+                Next <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="quiz-step" data-step="4">
+            <p class="quiz-step-label">Step 4 of 4</p>
+            <h3>When would you like it done?</h3>
+            <div class="quiz-fields">
+              <label class="sr-only" for="q-timing">Preferred date or time</label>
+              <input class="quiz-input" type="text" id="q-timing" name="timing" placeholder="e.g. Today, this weekend, next Tuesday…" required>
+            </div>
+            <p class="quiz-error" data-error-for="4" hidden>Let us know when you'd like it done.</p>
+            <div class="quiz-actions">
+              <button type="button" class="btn btn-ghost quiz-back">Back</button>
+              <button type="button" class="btn btn-primary quiz-send" id="quiz-send">
+                Send Request <svg class="icon" aria-hidden="true"><use href="#icon-message"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="quiz-step quiz-done" data-step="done">
+            <svg class="icon quiz-done-icon" aria-hidden="true"><use href="#icon-check"/></svg>
+            <h3>Your text is ready to send.</h3>
+            <p>We opened a text message to <strong>469-338-8237</strong> with your details pre-filled — just hit send in your messaging app and we'll text you back to confirm.</p>
+            <button type="button" class="btn btn-ghost quiz-restart">Start Over</button>
+          </div>
+
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="cta-final">
+    <div class="cta-bg"><img src="Media/Unknown-3.jpg" alt="" loading="lazy"></div>
+    <div class="cta-scrim"></div>
+    <div class="container cta-inner">
+      <h2 class="reveal-up">Book Today — <span class="text-accent">Your Car Deserves It.</span></h2>
+      <p class="reveal-up">Call or text now to lock in your same-day appointment.</p>
+      <div class="hero-actions reveal-up">
+        <a href="sms:+14693388237" class="btn btn-primary btn-lg">Text 469-338-8237</a>
+        <a href="tel:+14693388237" class="btn btn-ghost btn-lg">
+          <svg class="icon" aria-hidden="true"><use href="#icon-phone"/></svg>Call Now
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <img src="assets/img/logo-full.png" alt="2 Brothers Detailing logo" class="footer-logo">
+    <div class="footer-links">
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#area">Service Area</a>
+      <a href="#contact">Get A Quote</a>
+    </div>
+    <div class="footer-contact">
+      <a href="tel:+14693388237"><svg class="icon" aria-hidden="true"><use href="#icon-phone"/></svg>469-338-8237</a>
+      <span><svg class="icon" aria-hidden="true"><use href="#icon-pin"/></svg>Balch Springs &amp; Surrounding Areas, TX</span>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>&copy; 2026 2 Brothers Detailing. Mobile auto detailing done right.</span>
+    <a href="https://emannadigital.com" target="_blank" rel="noopener" class="footer-credit-bubble">
+      <img src="assets/img/emanna-icon.png" alt="Emanna Digital">
+      <span>Designed by <strong>Emanna Digital</strong></span>
+    </a>
+  </div>
+</footer>
+
+</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollSmoother.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/SplitText.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
