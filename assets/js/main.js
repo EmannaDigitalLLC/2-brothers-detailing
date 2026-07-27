@@ -262,7 +262,10 @@
         return new SplitText(el, { type: "words", wordsClass: "word" });
       });
 
+      gsap.set([".hero .eyebrow", ".hero-sub", ".hero-actions", ".hero-bottom-right"], { opacity: 0, y: 16 });
+
       var tl = gsap.timeline({ delay: 0.2 });
+      tl.to(".hero .eyebrow", { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" });
       splits.forEach(function (split, i) {
         tl.from(split.words, {
           yPercent: 120,
@@ -270,12 +273,11 @@
           duration: 0.9,
           ease: "expo.out",
           stagger: 0.06,
-        }, i * 0.12);
+        }, i === 0 ? "-=0.25" : "<+0.12");
       });
-      gsap.set([".hero-sub", ".hero-actions", ".hero-trust"], { opacity: 0, y: 16 });
       tl.to(".hero-sub", { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, "-=0.4")
         .to(".hero-actions", { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, "-=0.3")
-        .to(".hero-trust", { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, "-=0.3");
+        .to(".hero-bottom-right", { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, "-=0.3");
     });
 
     /* ---------------- Hero parallax ---------------- */
